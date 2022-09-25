@@ -7,18 +7,22 @@
 int main(int argc, char *argv[])
 {
 	if (argc > 3) {
-		throw std::invalid_argument("Only names of files to open and to save are required as parameters");
+		std::cout << "Only names of files to open and to save are required as parameters";
+		exit(1);
 	}
 	if (argc <= 2) {
-		throw std::invalid_argument("Pass the name of files to read from and to write to as parameters");
+		std::cout << "Pass the name of files to read from and to write to as parameters";
+		exit(1);
 	}
 	FILE* fopen = freopen(argv[1], "r", stdin);
 	if (fopen == NULL) {
-		throw std::runtime_error("Could not open file to read from");
+		std::cout << "Could not open file to read from";
+		exit(1);
 	}
 	FILE* fclose = freopen(argv[2], "w", stdout);
 	if (fclose == NULL) {
-		throw std::runtime_error("Could not open file to write to");
+		std::cout << "Could not open file to write to";
+		exit(1);
 	}
 	int N;
 	std::cin >> N;
@@ -76,4 +80,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	//then come the walls, they do not matter for Oleg
+	return 0;
 }
