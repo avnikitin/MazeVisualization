@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		int feeder, fake_feeder;
 		int m; // edges
 		std::wcin >> vertex;
-		std::cin  >> x >> y >> entry >> exit
+		std::cin  >> x >> y >> entry >> ext
 			>> feeder >> fake_feeder >> m;
 		std::vector <wchar_t> adjacent(m);
 		for (int j = 0; j < m; j++) {
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 			std::cout << "0 ";
 		}
 		else {
-			std::cout << entry << ' ' << exit << ' ' << feeder << ' ';
+			std::cout << "1 " << entry << ' ' << ext << ' ' << feeder << ' ';
 		}
 		std::cout << "| (" << x << ", " << y << ")\n";
 		for (int j = 0; j < m; j++) {
