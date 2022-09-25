@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
 		wchar_t vertex;
 		int x, y;
-		int entry, exit;
+		int entry, ext;
 		int feeder, fake_feeder;
 		int m; // edges
 		std::wcin >> vertex;
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 
 		std::wcout << vertex;
 		std::cout << ": ";
-		if (entry + exit + feeder == 0) {
+		if (entry + ext + feeder == 0) {
 			std::cout << "0 ";
 		}
 		else {
