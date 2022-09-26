@@ -24,6 +24,8 @@ int main(int argc, char *argv[])
 		std::cout << "Could not open file to write to";
 		exit(1);
 	}
+	int szX, szY;
+	std::cin >> szX >> szY;
 	int N;
 	std::cin >> N;
 	std::vector <wchar_t> vertices(N);
@@ -38,7 +40,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	for (int i = 0; i < N; i++) {
-
 		wchar_t vertex;
 		int x, y;
 		int entry, ext;
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 			>> feeder >> fake_feeder >> m;
 		std::vector <wchar_t> adjacent(m);
 		for (int j = 0; j < m; j++) {
-			char to;
+			wchar_t to;
 			int cnt;
 			std::wcin >> to;
 			std::cin >> cnt;
