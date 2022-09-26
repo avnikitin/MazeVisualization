@@ -1,0 +1,33 @@
+A B C D E F G H I J K L M N O P
+A: 0 | (10, 1)
+B E K
+B: 0 | (7, 1)
+A C F
+C: 0 | (4, 1)
+B D G
+D: 0 | (1, 1)
+C H
+E: 0 | (10, 4)
+A F I
+F: 0 | (7, 4)
+B E G J
+G: 0 | (4, 4)
+C F H K
+H: 0 | (1, 4)
+D G L
+I: 0 | (10, 7)
+E J M
+J: 0 | (7, 7)
+F I K N
+K: 1 1 1 0 | (4, 7)
+A G J L O
+L: 0 | (1, 7)
+H K P
+M: 0 | (10, 10)
+I N
+N: 0 | (7, 10)
+J M O
+O: 0 | (4, 10)
+K N P
+P: 0 | (1, 10)
+L O
